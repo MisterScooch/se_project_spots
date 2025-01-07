@@ -1,0 +1,25 @@
+.cards{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
+}
+.cards__list{
+  list-style-type: none;
+  padding:0;
+  margin:0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 413px);
+  gap: 40px 20px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 627px){
+  .cards__list{
+  grid-template-columns: repeat(auto-fit, 288px);
+  row-gap: 20px;
+  }
+  .cards{
+    padding-bottom: 20px;
+  }
+}
